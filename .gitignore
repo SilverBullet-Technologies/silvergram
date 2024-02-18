@@ -6,3 +6,6 @@ env/
 .vscode/
 *.swp
 .DS_Store
+/build/
+/dist/
+silvergram.egg-info/

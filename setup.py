@@ -8,4 +8,7 @@ setup(
     author="SilverBullet Technologies",
     author_email="tech.silver.bullet@gmail.com",
     url="https://github.com/yourusername/mathlib",
+    install_requires=[
+        "aiogram>=3.4.1"
+    ]
 )
