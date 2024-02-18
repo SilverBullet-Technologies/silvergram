@@ -10,5 +10,7 @@ setup(
     author="SilverBullet Technologies",
     author_email="tech.silver.bullet@gmail.com",
     url="https://github.com/SilverBullet-Technologies/silvergram",
-    install_requires=open("requirements.txt").read().splitlines()
+    install_requires=[
+        "aiogram>=3.4.1"
+    ]
 )
