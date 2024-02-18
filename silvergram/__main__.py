@@ -3,36 +3,36 @@ import sys
 CONFIG_EN = """\
 from silvergram.types import InheritedStep
 
-TOKEN = ""                                             # Insert the bot token here
+TOKEN = "1111111111:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"  # Insert the bot token here
 
 PHRASES = {
-    "start": "Hello! I am a simple SilverGram bot!",   # Describe your steps and phrases here
-    "how": "How are you?",                             # There can be any number of phrases and order doesn't matter
-    "end": "Goodbye, see you later!"                   # The steps are used to navigate and send messages
+    "start": "Hello! I am a simple SilverGram bot!",      # Describe your steps and phrases here
+    "how": "How are you?",                                # There can be any number of phrases and order doesn't matter
+    "end": "Goodbye, see you later!"                      # The steps are used to navigate and send messages
 }
 
 INLINE_KEYBOARDS = {
-    "start": [["Go to next message"]],                 # Describe your steps and message keyboards here
-    "how": InheritedStep("start"),                     # To add a keyboard to a message, specify the same step
-    "end": InheritedStep("start")                      # You can use InheritedStep for inheritance
+    "start": [["Go to next message"]],                    # Describe your steps and message keyboards here
+    "how": InheritedStep("start"),                        # To add a keyboard to a message, specify the same step
+    "end": InheritedStep("start")                         # You can use InheritedStep for inheritance
 }
 """
 
 CONFIG_RU = """\
 from silvergram.types import InheritedStep
 
-TOKEN = ""                                             # Вставьте сюда токен бота
+TOKEN = "1111111111:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"  # Вставьте сюда токен бота
 
 PHRASES = {
-    "start": "Hello! I am a simple SilverGram bot!",   # Здесь опишите свои шаги и фразы
-    "how": "How are you?",                             # Может быть сколько угодно фраз и их порядок не важен
-    "end": "Goodbye, see you later!"                   # Шаги используются для навигации и отправки сообщений
+    "start": "Hello! I am a simple SilverGram bot!",      # Здесь опишите свои шаги и фразы
+    "how": "How are you?",                                # Может быть сколько угодно фраз и их порядок не важен
+    "end": "Goodbye, see you later!"                      # Шаги используются для навигации и отправки сообщений
 }
 
 INLINE_KEYBOARDS = {
-    "start": [["Go to next message"]],                 # Здесь опишите свои шаги и клавиатуры для сообщений
-    "how": InheritedStep("start"),                     # Чтобы добавить клавиатуру к сообщению, укажите тот же шаг
-    "end": InheritedStep("start")                      # Можно использовать InheritedStep для наследования
+    "start": [["Go to next message"]],                    # Здесь опишите свои шаги и клавиатуры для сообщений
+    "how": InheritedStep("start"),                        # Чтобы добавить клавиатуру к сообщению, укажите тот же шаг
+    "end": InheritedStep("start")                         # Можно использовать InheritedStep для наследования
 }
 """
 
