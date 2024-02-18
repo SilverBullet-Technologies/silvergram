@@ -1,8 +1,5 @@
 from setuptools import setup, find_packages
 
-with open('requirements.txt') as f:
-    install_requires = f.read().splitlines()
-
 setup(
     name="silvergram",
     version="0.0.1",
@@ -13,6 +10,7 @@ setup(
     author="SilverBullet Technologies",
     author_email="tech.silver.bullet@gmail.com",
     url="https://github.com/SilverBullet-Technologies/silvergram",
-    install_requires=install_requires
+    install_requires=[
+        "aiogram>=3.4.1"
+    ]
 )
-
