@@ -12,7 +12,7 @@ setup(
     long_description_content_type="text/markdown",
     author="SilverBullet Technologies",
     author_email="tech.silver.bullet@gmail.com",
-    url="https://github.com/yourusername/mathlib",
+    url="https://github.com/SilverBullet-Technologies/silvergram",
     install_requires=install_requires
 )
 
