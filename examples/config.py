@@ -3,7 +3,7 @@
 
 from silvergram.types import InheritedStep
 
-TOKEN = "1111111111:AAHXMKlOlvnoeg8AHcWV6zJHL3YW4bZZDQs"  # Insert the bot token here
+TOKEN = "1111111111:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"  # Insert the bot token here
 
 PHRASES = {
     "start": "Hello! I am a simple SilverGram bot!",      # Describe your steps and phrases here
