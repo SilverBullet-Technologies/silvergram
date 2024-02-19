@@ -19,7 +19,7 @@ pip install silvergram
 
 ## Quick Start
 
-Here's a simple example of how to use Silvergram to create a basic bot:
+Here's a simple [quick start example](https://github.com/SilverBullet-Technologies/silvergram/blob/main/examples/quick_start.py) of how to use Silvergram to create a basic bot:
 
 ```python
 from silvergram import Bot
@@ -42,10 +42,11 @@ if __name__ == "__main__":
     bot.run()
 ```
 
-For more detailed usage instructions and examples, please see `docs` and `examples` folders
+For more detailed usage instructions and examples, please see [docs](https://github.com/SilverBullet-Technologies/silvergram/blob/main/docs) and [examples](https://github.com/SilverBullet-Technologies/silvergram/blob/main/examples) folders
 
-##Adding Configuration File
-You can create a `config.py` file using the following command:
+## Adding Configuration File
+
+You can create a [config.py](https://github.com/SilverBullet-Technologies/silvergram/blob/main/examples/config.py) file using the following command:
 
 ```bash
 python -m silvergram addconfig [-t, --type TYPE] [-p, --path PATH]
@@ -60,9 +61,11 @@ Specify the type of generating. Possible values: 'en' for English comments, 'ru'
 `-p, --path PATH`
 
 Specify the path where the configuration file will be saved. If not provided, the file will be saved in the current working directory
+
 ## Contributing
 
 Contributions to Silvergram are welcome! If you find any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request on GitHub
 
 ## License
+
 This project is licensed under the MIT License - see the LICENSE file for details
