@@ -51,7 +51,7 @@ INLINE_KEYBOARDS = {
 CONFIG = """\
 from silvergram.types import InheritedStep
 
-TOKEN = ""
+TOKEN = "1111111111:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 
 PHRASES = {
     "start": "Hello! I am a simple SilverGram bot!",
