@@ -1,5 +1,5 @@
 # You can use the following command to create this file
-# >>> silvergram addconfig
+# >>> python -m silvergram addconfig [-t, --type TYPE] [-p, --path PATH]
 
 from silvergram.types import InheritedStep
 
