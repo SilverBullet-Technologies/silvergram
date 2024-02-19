@@ -86,14 +86,14 @@ if __name__ == "__main__":
     option = None
     path = "config.py"
     if "addconfig" in args:
-        if "-t" in args or "-type" in args:
+        if "-t" in args or "--type" in args:
             if "-t" in args:
                 option = args[args.index("-t") + 1]
             else:
-                option = args[args.index("-type") + 1]
-        if "-p" in args or "-path" in args:
+                option = args[args.index("--type") + 1]
+        if "-p" in args or "--path" in args:
             if "-p" in args:
                 path = args[args.index("-p") + 1]
             else:
-                path = args[args.index("-path") + 1]
+                path = args[args.index("--path") + 1]
         create_config(option, path)

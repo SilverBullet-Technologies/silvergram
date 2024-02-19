@@ -4,7 +4,7 @@ setup(
     name="silvergram",
     version="0.0.2",
     packages=find_packages(),
-    description="A convenient shell for the aiogram library",
+    description="A convenient shell for the Aiogram library",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
     author="SilverBullet Technologies",
