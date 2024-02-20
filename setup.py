@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="silvergram",
-    version="0.0.2",
+    version="0.0.3",
     packages=find_packages(),
     description="A convenient shell for the Aiogram library",
     long_description=open("README.md").read(),
