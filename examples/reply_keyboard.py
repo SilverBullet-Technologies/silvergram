@@ -2,13 +2,14 @@ from silvergram import Bot
 from silvergram.types import Message
 from config import *
 
-bot = Bot(TOKEN, phrases=PHRASES, inline_keyboards=INLINE_KEYBOARDS)
+bot = Bot(TOKEN, phrases=PHRASES, reply_keyboards=REPLY_KEYBOARDS)
 
 
-@bot.on_inline_button()
+@bot.on_reply_button()
 async def on_inline_button(message: Message):
     chat_id = message.chat.id
     steps = {
+        "start": "how",
         "how": "end",
         "end": "start"
     }

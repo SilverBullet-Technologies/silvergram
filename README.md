@@ -23,6 +23,7 @@ Here's a simple [quick start example](https://github.com/SilverBullet-Technologi
 
 ```python
 from silvergram import Bot
+from silvergram.types import Message
 
 TOKEN = "YOUR_TOKEN"
 PHRASES = {
@@ -33,7 +34,7 @@ bot = Bot(TOKEN, phrases=PHRASES)
 
 
 @bot.on_message()
-async def on_message_start(message):
+async def on_message_start(message: Message):
     chat_id = message.chat.id
     await bot.send_current_message(chat_id)
 

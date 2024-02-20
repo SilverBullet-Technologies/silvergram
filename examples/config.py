@@ -11,8 +11,11 @@ PHRASES = {
     "end": "Goodbye, see you later!"                      # The steps are used to navigate and send messages
 }
 
-INLINE_KEYBOARDS = {
-    "start": [["Go to next message"]],                    # Describe your steps and message keyboards here
-    "how": InheritedStep("start"),                        # To add a keyboard to a message, specify the same step
-    "end": InheritedStep("start")                         # You can use InheritedStep for inheritance
+INLINE_KEYBOARDS = {                                      # Describe your steps and inline keyboards here
+    "how": [["Go to next message"]],                      # To add a keyboard to a message, specify the same step
+    "end": InheritedStep("how")                           # You can use InheritedStep for inheritance
+}
+
+REPLY_KEYBOARDS = {                                       # Describe your steps and reply keyboards here
+    "start": [["Go to next message"]]                     # The syntax is identical to inline keyboards
 }

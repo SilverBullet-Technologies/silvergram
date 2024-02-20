@@ -11,10 +11,13 @@ PHRASES = {
     "end": "Goodbye, see you later!"                      # The steps are used to navigate and send messages
 }
 
-INLINE_KEYBOARDS = {
-    "start": [["Go to next message"]],                    # Describe your steps and message keyboards here
-    "how": InheritedStep("start"),                        # To add a keyboard to a message, specify the same step
-    "end": InheritedStep("start")                         # You can use InheritedStep for inheritance
+INLINE_KEYBOARDS = {                                      
+    "how": [["Go to next message"]],                      # Describe your steps and inline keyboards here
+    "end": InheritedStep("how")                           # You can use InheritedStep for inheritance
+}
+
+REPLY_KEYBOARDS = {                                       # Describe your steps and reply keyboards here
+    "start": [["Go to next message"]]                     # The syntax is identical to inline keyboards
 }
 """
 
@@ -29,10 +32,13 @@ PHRASES = {
     "end": "Goodbye, see you later!"                      # Шаги используются для навигации и отправки сообщений
 }
 
-INLINE_KEYBOARDS = {
-    "start": [["Go to next message"]],                    # Здесь опишите свои шаги и клавиатуры для сообщений
-    "how": InheritedStep("start"),                        # Чтобы добавить клавиатуру к сообщению, укажите тот же шаг
-    "end": InheritedStep("start")                         # Можно использовать InheritedStep для наследования
+INLINE_KEYBOARDS = {                                      
+    "how": [["Go to next message"]],                      # Здесь опишите свои шаги и inline-клавиатуры
+    "end": InheritedStep("how")                           # Можно использовать InheritedStep для наследования
+}
+
+REPLY_KEYBOARDS = {                                       # Здесь опишите свои шаги и reply-клавиатуры
+    "start": [["Go to next message"]]                     # Синтаксис такой же, как и у inline-клавиатур
 }
 """
 
@@ -44,6 +50,10 @@ PHRASES = {
 }
 
 INLINE_KEYBOARDS = {
+    
+}
+
+REPLY_KEYBOARDS = {
     
 }
 """
@@ -60,9 +70,12 @@ PHRASES = {
 }
 
 INLINE_KEYBOARDS = {
-    "start": [["Go to next message"]],
-    "how": InheritedStep("start"),
-    "end": InheritedStep("start")
+    "how": [["Go to next message"]],
+    "end": InheritedStep("how")
+}
+
+REPLY_KEYBOARDS = {
+    "start": [["Go to next message"]]
 }
 """
 
