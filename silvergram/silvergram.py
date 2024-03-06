@@ -51,6 +51,13 @@ class Bot(BotAiogram):
         self.__on_reply_button_handlers = []
         self.__on_message_handlers = []
         self.__now_reply_keyboard = None
+        self.__parse_mode = None
+
+    def set_parse_mode(
+        self,
+        parse_mode: str = None
+    ):
+        self.__parse_mode = parse_mode
 
     async def get_chat_instance(
         self,
@@ -100,7 +107,8 @@ class Bot(BotAiogram):
         await self.send_message(
             chat_id=chat_id,
             text=self.__phrases[step],
-            reply_markup=reply_markup
+            reply_markup=reply_markup,
+            parse_mode=self.__parse_mode
         )
 
     async def send_and_next_step(
